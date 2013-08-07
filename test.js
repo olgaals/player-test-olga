@@ -1,11 +1,10 @@
 (function() {
     console.log("****test share******************");
-    times=0;
-    deleted=0;
+    
 
  onReady=function(){
     
-     console.log("ready");
+     console.log("ready test share");
      clearInterval(interval);
     
 }
