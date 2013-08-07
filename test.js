@@ -3,9 +3,10 @@
     times=0;
     deleted=0;
 
- onPlayerReady=function(){
+ onReady=function(){
     
      console.log("ready");
+     clearInterval(interval);
     
 }
 
@@ -14,8 +15,8 @@ player = brightcove.api.getExperience();
     exper = player.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
      interval=setInterval(function(){
          if(exper.getReady())
-         onPlayerReady();
-         }, 30);
+         onReady();
+         }, 50);
 
         
 }());
